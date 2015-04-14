@@ -17,7 +17,6 @@ import com.alibaba.athena_base.base.BaseActivity;
 import com.alibaba.athena_base.db.orm.UserInfo;
 
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
