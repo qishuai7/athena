@@ -17,11 +17,11 @@ JNIEXPORT jstring JNICALL Java_com_alibaba_athena_1base_ALJniActivity_stringTest
 
 /*
  * Class:     com_alibaba_athena_base_ALJniActivity
- * Method:    intTestNdk
- * Signature: (I)I
+ * Method:    decompressAndUnzip
+ * Signature: (Ljava/lang/String;)Ljava/lang/String;
  */
-JNIEXPORT jint JNICALL Java_com_alibaba_athena_1base_ALJniActivity_intTestNdk
-  (JNIEnv *, jobject, jint);
+JNIEXPORT jstring JNICALL Java_com_alibaba_athena_1base_ALJniActivity_decompressAndUnzip
+  (JNIEnv *, jobject, jstring);
 
 #ifdef __cplusplus
 }

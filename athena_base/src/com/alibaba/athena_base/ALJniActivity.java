@@ -15,21 +15,19 @@ public class ALJniActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        String jniString = stringTestNdk();
-        Log.d("QS", jniString);
+        String jniTestString = stringTestNdk();
+        String jniDecString = decompressAndUnzip("test");
+        Log.d("JNI", "log = " +  jniDecString);
         
-        mPersionInfo = new PersionInfo(1,"xiaoming","man");
-        
-        //int number =  intTestNdk(8);
-        
-        Toast.makeText(this, jniString, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, jniDecString, Toast.LENGTH_LONG).show();
     }
     
     public native String  stringTestNdk ();  
+    public native String  decompressAndUnzip(String content);
     //public native int intTestNdk(int number);
    // public native PersionInfo objTestNdk();
     
     static {  
-        System.loadLibrary("testNDK");  
+        System.loadLibrary("core-1.0.0");
     }  
 }
