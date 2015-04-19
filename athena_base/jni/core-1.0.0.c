@@ -21,7 +21,5 @@ Java_com_alibaba_athena_1base_ALJniActivity_decompressAndUnzip
 	(*env)->ReleaseStringUTFChars(env, inputStr, str);
 
 
-	char * strC = "hello wang wu!";
-
 	 return (*env)->NewStringUTF(env, str);
 }

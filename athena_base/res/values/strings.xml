@@ -4,5 +4,10 @@
     <string name="app_name">athena_base</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+	<string name="hello_format">Hello %s!</string>
+	<string-array name="bestFoods">
+        <item>Foie gras</item>
+        <item>pez espada</item>
+        <item>california maki</item>
+    </string-array>
 </resources>

@@ -8,7 +8,13 @@
 package com.alibaba.athena_base;
 
 public final class R {
+    public static final class array {
+        public static final int bestFoods=0x7f070000;
+    }
     public static final class attr {
+    }
+    public static final class color {
+        public static final int androidColor=0x7f040000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -18,8 +24,8 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
@@ -34,48 +40,57 @@ public final class R {
         public static final int loading_test=0x7f020009;
     }
     public static final class id {
-        public static final int action_forgot_password=0x7f08000d;
-        public static final int action_settings=0x7f08000e;
-        public static final int email=0x7f080003;
-        public static final int login=0x7f080005;
-        public static final int login_form=0x7f080002;
-        public static final int login_status=0x7f080000;
-        public static final int login_status_message=0x7f080001;
-        public static final int main_btn_bitmap=0x7f08000a;
-        public static final int main_btn_db=0x7f080008;
-        public static final int main_btn_http=0x7f080009;
-        public static final int main_btn_inject=0x7f080007;
-        public static final int main_iv_pic=0x7f08000c;
-        public static final int main_tv_content=0x7f08000b;
-        public static final int password=0x7f080004;
-        public static final int sign_in_button=0x7f080006;
+        public static final int action_forgot_password=0x7f0a0013;
+        public static final int action_settings=0x7f0a0014;
+        public static final int an_input_btn=0x7f0a0007;
+        public static final int an_input_et=0x7f0a0006;
+        public static final int an_input_tv=0x7f0a0008;
+        public static final int an_long_click_btn=0x7f0a0009;
+        public static final int an_start_act_btn=0x7f0a000a;
+        public static final int email=0x7f0a000e;
+        public static final int login=0x7f0a0010;
+        public static final int login_form=0x7f0a000d;
+        public static final int login_status=0x7f0a000b;
+        public static final int login_status_message=0x7f0a000c;
+        public static final int main_btn_annotation=0x7f0a0012;
+        public static final int main_btn_bitmap=0x7f0a0003;
+        public static final int main_btn_db=0x7f0a0001;
+        public static final int main_btn_http=0x7f0a0002;
+        public static final int main_btn_inject=0x7f0a0000;
+        public static final int main_iv_pic=0x7f0a0005;
+        public static final int main_tv_content=0x7f0a0004;
+        public static final int password=0x7f0a000f;
+        public static final int sign_in_button=0x7f0a0011;
     }
     public static final class layout {
-        public static final int activity_login=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int anmi_progress_loding=0x7f030002;
+        public static final int activity_afinal=0x7f030000;
+        public static final int activity_annotation=0x7f030001;
+        public static final int activity_login=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int anmi_progress_loding=0x7f030004;
     }
     public static final class menu {
-        public static final int login=0x7f070000;
-        public static final int main=0x7f070001;
+        public static final int login=0x7f090000;
+        public static final int main=0x7f090001;
     }
     public static final class string {
-        public static final int action_forgot_password=0x7f050008;
-        public static final int action_settings=0x7f050002;
-        public static final int action_sign_in_register=0x7f050006;
-        public static final int action_sign_in_short=0x7f050007;
-        public static final int app_name=0x7f050000;
-        public static final int error_field_required=0x7f05000d;
-        public static final int error_incorrect_password=0x7f05000c;
-        public static final int error_invalid_email=0x7f05000a;
-        public static final int error_invalid_password=0x7f05000b;
-        public static final int hello_world=0x7f050001;
-        public static final int login_progress_signing_in=0x7f050009;
+        public static final int action_forgot_password=0x7f060009;
+        public static final int action_settings=0x7f060002;
+        public static final int action_sign_in_register=0x7f060007;
+        public static final int action_sign_in_short=0x7f060008;
+        public static final int app_name=0x7f060000;
+        public static final int error_field_required=0x7f06000e;
+        public static final int error_incorrect_password=0x7f06000d;
+        public static final int error_invalid_email=0x7f06000b;
+        public static final int error_invalid_password=0x7f06000c;
+        public static final int hello_format=0x7f060003;
+        public static final int hello_world=0x7f060001;
+        public static final int login_progress_signing_in=0x7f06000a;
         /**  Strings related to login 
          */
-        public static final int prompt_email=0x7f050004;
-        public static final int prompt_password=0x7f050005;
-        public static final int title_activity_login=0x7f050003;
+        public static final int prompt_email=0x7f060005;
+        public static final int prompt_password=0x7f060006;
+        public static final int title_activity_login=0x7f060004;
     }
     public static final class style {
         /** 
@@ -101,11 +116,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
-        public static final int LoginFormContainer=0x7f060002;
+        public static final int AppTheme=0x7f080001;
+        public static final int LoginFormContainer=0x7f080002;
     }
 }

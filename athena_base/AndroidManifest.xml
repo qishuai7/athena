@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.alibaba.athena_base.ALJniActivity"
+            android:name="com.alibaba.athena_base.ALMainActivity_"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,13 +26,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.alibaba.athena_base.ALMainActivity"
-            android:label="@string/title_activity_login"
+            android:name="com.alibaba.athena_base.ALAfinalActivity"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
          <activity
             android:name="com.alibaba.athena_base.ALLoginActivity"
-            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+         <activity
+            android:name="com.alibaba.athena_base.ALAnnotationActivity_"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+         <activity
+            android:name="com.alibaba.athena_base.ALAnnotationListActivity_"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
     </application>

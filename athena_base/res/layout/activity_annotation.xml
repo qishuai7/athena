@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/an_input_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/an_input_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Click me!" />
+
+    <TextView
+        android:id="@+id/an_input_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/an_long_click_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start extra activity, long click !" />
+
+    <Button
+        android:id="@+id/an_start_act_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start list activity !" />
+
+</LinearLayout>

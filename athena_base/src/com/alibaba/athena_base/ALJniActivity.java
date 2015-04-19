@@ -13,7 +13,7 @@ public class ALJniActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_afinal);
         
         String jniTestString = stringTestNdk();
         String jniDecString = decompressAndUnzip("test");

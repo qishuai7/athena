@@ -1,7 +1,7 @@
 package com.alibaba.athena_base.base;
 
-import net.tsz.afinal.FinalActivity;
+import android.app.Activity;
 
-public class BaseActivity extends FinalActivity{
+public class BaseActivity extends Activity{
     
 }
