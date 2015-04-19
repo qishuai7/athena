@@ -40,34 +40,44 @@ public final class R {
         public static final int loading_test=0x7f020009;
     }
     public static final class id {
-        public static final int action_forgot_password=0x7f0a0013;
-        public static final int action_settings=0x7f0a0014;
+        public static final int action_forgot_password=0x7f0a001b;
+        public static final int action_settings=0x7f0a001c;
         public static final int an_input_btn=0x7f0a0007;
         public static final int an_input_et=0x7f0a0006;
         public static final int an_input_tv=0x7f0a0008;
         public static final int an_long_click_btn=0x7f0a0009;
         public static final int an_start_act_btn=0x7f0a000a;
-        public static final int email=0x7f0a000e;
-        public static final int login=0x7f0a0010;
-        public static final int login_form=0x7f0a000d;
-        public static final int login_status=0x7f0a000b;
-        public static final int login_status_message=0x7f0a000c;
-        public static final int main_btn_annotation=0x7f0a0012;
+        public static final int email=0x7f0a0015;
+        public static final int http_async=0x7f0a000d;
+        public static final int http_async_btn=0x7f0a0011;
+        public static final int http_async_pbar=0x7f0a0010;
+        public static final int http_async_tv=0x7f0a000f;
+        public static final int http_get_btn=0x7f0a000b;
+        public static final int http_post_btn=0x7f0a000c;
+        public static final int http_result_tv=0x7f0a000e;
+        public static final int login=0x7f0a0017;
+        public static final int login_form=0x7f0a0014;
+        public static final int login_status=0x7f0a0012;
+        public static final int login_status_message=0x7f0a0013;
+        public static final int main_annotation_btn=0x7f0a0019;
         public static final int main_btn_bitmap=0x7f0a0003;
         public static final int main_btn_db=0x7f0a0001;
         public static final int main_btn_http=0x7f0a0002;
         public static final int main_btn_inject=0x7f0a0000;
+        public static final int main_http_btn=0x7f0a001a;
         public static final int main_iv_pic=0x7f0a0005;
         public static final int main_tv_content=0x7f0a0004;
-        public static final int password=0x7f0a000f;
-        public static final int sign_in_button=0x7f0a0011;
+        public static final int password=0x7f0a0016;
+        public static final int sign_in_button=0x7f0a0018;
     }
     public static final class layout {
         public static final int activity_afinal=0x7f030000;
         public static final int activity_annotation=0x7f030001;
-        public static final int activity_login=0x7f030002;
-        public static final int activity_main=0x7f030003;
-        public static final int anmi_progress_loding=0x7f030004;
+        public static final int activity_http=0x7f030002;
+        public static final int activity_http_async=0x7f030003;
+        public static final int activity_login=0x7f030004;
+        public static final int activity_main=0x7f030005;
+        public static final int anmi_progress_loding=0x7f030006;
     }
     public static final class menu {
         public static final int login=0x7f090000;

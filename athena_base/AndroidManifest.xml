@@ -41,6 +41,14 @@
             android:name="com.alibaba.athena_base.ALAnnotationListActivity_"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
+        <activity
+            android:name="com.alibaba.athena_base.ALHttpActivity_"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.alibaba.athena_base.ALHttpAsyncActivity_"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
     </application>
 
 </manifest>

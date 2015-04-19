@@ -5,10 +5,16 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/main_btn_annotation"
+        android:id="@+id/main_annotation_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="测试 Annotations" />
+     <Button
+        android:id="@+id/main_http_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="测试 http" />
 
 </LinearLayout>
