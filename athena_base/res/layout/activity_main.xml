@@ -16,5 +16,19 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="测试 http" />
+     
+     <Button
+        android:id="@+id/main_http_jni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="测试 jni" />
 
+      <Button
+        android:id="@+id/main_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="测试 service" />
+     
 </LinearLayout>

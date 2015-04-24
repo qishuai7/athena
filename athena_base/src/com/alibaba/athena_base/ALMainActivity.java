@@ -27,8 +27,19 @@ public class ALMainActivity extends BaseActivity{
     
     @Click(R.id.main_http_btn)
     public void httpClicked(){
-        Log.i("QS", "http clicked...");
         Intent intent = new Intent(this, ALHttpActivity_.class);
+        startActivity(intent);
+    }
+    
+    @Click(R.id.main_http_jni)
+    public void jniClicked(){
+        Intent intent = new Intent(this, ALJniActivity_.class);
+        startActivity(intent);
+    }
+    
+    @Click(R.id.main_service)
+    public void serviceClicked(){
+        Intent intent = new Intent(this, ALServiceActivity_.class);
         startActivity(intent);
     }
 }

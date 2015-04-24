@@ -49,6 +49,16 @@
             android:name="com.alibaba.athena_base.ALHttpAsyncActivity_"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
+         <activity
+            android:name="com.alibaba.athena_base.ALJniActivity_"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.alibaba.athena_base.ALServiceActivity_"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        
+        <service android:name="com.alibaba.athena_base.LocalService" />
     </application>
 
 </manifest>

@@ -1,25 +1,35 @@
 package com.alibaba.athena_base;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
+
 import com.alibaba.athena_base.vo.PersionInfo;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
+import android.widget.TextView;
 
+@EActivity(R.layout.activity_jni)
 public class ALJniActivity extends Activity{
     private PersionInfo mPersionInfo = null;
  
+    @ViewById(R.id.jni_btn_result)
+    TextView mJinResultTv;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_afinal);
         
+    }
+    
+    @AfterViews
+    void init(){
         String jniTestString = stringTestNdk();
         String jniDecString = decompressAndUnzip("test");
-        Log.d("JNI", "log = " +  jniDecString);
-        
-        Toast.makeText(this, jniDecString, Toast.LENGTH_LONG).show();
+        Log.d("JNI", "log = " +  jniTestString + "; decompressAndUnzip = "+ jniDecString);
+        mJinResultTv.setText(jniTestString);
     }
     
     public native String  stringTestNdk ();  

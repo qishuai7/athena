@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.alibaba.athena_base.base.BaseActivity;
+import com.alibaba.athena_base.network.HttpConnectionManager;
 
 @EActivity(R.layout.activity_http)
 public class ALHttpActivity extends BaseActivity{
@@ -32,6 +33,7 @@ public class ALHttpActivity extends BaseActivity{
     @ViewById(R.id.http_result_tv)
     TextView mResultTv;
     
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,55 +43,15 @@ public class ALHttpActivity extends BaseActivity{
     @Click(R.id.http_get_btn)
     void httpGetBtnClicked(){
         Log.i("QS", "start get http..."); 
-        (new Thread(new MyThread())).start();
+        
+        HttpConnectionManager.getInstance().sendRequest("http://www.baidu.com", "get");
+        
     }
     
     @Click(R.id.http_async)
     void httpAsyncClicked(){
         startActivity(new Intent(this,ALHttpAsyncActivity_.class));
     }
-    
-    
-    private Handler mHandler = new Handler() {
-        public void handleMessage(Message msg) {
-            mResultTv.setText("msg = " + msg.what);
-        }
-        
-    };
-    
-    class MyThread implements Runnable {   
-        public void run() {  
-             while (true) {    
-                     
-                  Message message = new Message();   
-                  message.what = 110;   
-                    
-                  ALHttpActivity.this.mHandler.sendMessage(message);   
-                  try {   
-                       Thread.sleep(3000);    
-                  } catch (InterruptedException e) {   
-                       Thread.currentThread().interrupt();   
-                  }   
-             }   
-        }   
-   }   
-
-    public void testGetHttp(){
-        HttpGet getMethod = new HttpGet("http://www.baidu.com"); 
-        HttpClient client = new DefaultHttpClient();
-        
-        try {
-            HttpResponse response = client.execute(getMethod);
-            
-            Log.i("QS", "resCode = " + response.getStatusLine().getStatusCode()); //获取响应码  
-            String result = EntityUtils.toString(response.getEntity(), "utf-8");
-            Log.i("QS", "result = " + result);//获取服务器响应内容  
-            
-            mResultTv.setText("Get = " + result);
-        } catch (ClientProtocolException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+  
+  
 }
